@@ -4,7 +4,7 @@ pipeline{
         REPO_URL = 'https://github.com/bawrostom/Simple_Jenkins'
         IMAGE_NAME = 'linux-builder'
         def dockerHome = tool 'mydocker'
-        env.PATH = "${dockerHome}/bin:${env.PATH}"
+        PATH = "${dockerHome}/bin:${env.PATH}"
     }
     stages{
         stage('Checkout'){
