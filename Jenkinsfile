@@ -13,7 +13,7 @@ pipeline{
         stage('Build'){
             steps{
                 script{
-                    sh 'docker build -t ${IMAGE_NAME} .'
+                    sh 'echo Jenkins is well set up && docker build -t ${IMAGE_NAME} .'
                 }
             }
         }
