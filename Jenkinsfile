@@ -1,4 +1,10 @@
 pipline{
+    agent {
+        docker { 
+            image 'docker:24.0.2' 
+            args '-v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
     environment{
         REPO_URL = 'https://github.com/bawrostom/Simple_Jenkins'
         IMAGE_NAME = 'linux-builder'
