@@ -5,6 +5,10 @@ pipeline{
         IMAGE_NAME = 'linux-builder'
     }
     stages{
+         stage('Initialize'){
+            def dockerHome = tool 'mydocker'
+            env.PATH = "${dockerHome}/bin:${env.PATH}"
+        }
         stage('Checkout'){
             steps{
                 git url: "${env.REPO_URL}", branch: 'master'
