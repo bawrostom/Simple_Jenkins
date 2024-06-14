@@ -34,8 +34,9 @@ pipeline{
             steps{
                 script{
                 sh 'docker rm -f img'
+                }
             }
         }
-    }
 
+    }
 }
