@@ -1,4 +1,4 @@
-pipline{
+pipeline{
     agent {
         docker { 
             image 'docker:24.0.2' 
