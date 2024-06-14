@@ -32,7 +32,7 @@ pipeline{
         }
         stage('Clean'){
             steps{
-                script
+                script{
                 sh 'docker rm -f img'
             }
         }
