@@ -7,7 +7,6 @@ pipeline{
         env.PATH = "${dockerHome}/bin:${env.PATH}"
     }
     stages{
-        
         stage('Initialize'){
 
         }
