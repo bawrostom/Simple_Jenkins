@@ -15,7 +15,7 @@ pipeline{
         stage('Build'){
             steps{
                 script{
-                    sh 'echo Jenkins is well set up && docker build -t ${IMAGE_NAME} .'
+                    sh 'echo Jenkins is well set up && systemctl start docker  && docker build -t ${IMAGE_NAME} .'
                 }
             }
         }
