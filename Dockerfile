@@ -5,4 +5,4 @@ RUN apt-get update && \
     gcc
 
 COPY ./hellow.c ./hellow.c
-RUN gcc hellow.c -o hellow
+
