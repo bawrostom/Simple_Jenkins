@@ -7,9 +7,6 @@ pipeline{
         env.PATH = "${dockerHome}/bin:${env.PATH}"
     }
     stages{
-        stage('Initialize'){
-
-        }
         stage('Checkout'){
             steps{
                 git url: "${env.REPO_URL}", branch: 'master'
